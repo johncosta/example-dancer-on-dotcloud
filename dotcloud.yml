@@ -1,0 +1,5 @@
+www:
+  type: perl
+  approot: helloperl
+  requirements:
+    - App::cpanminus
