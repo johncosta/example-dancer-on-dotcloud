@@ -17,13 +17,11 @@ here: http://docs.dotcloud.com/services/perl/#basic-use
 
 * Step 1:  Start your project
 
-
     mkdir ramen-on-dotcloud
     cd ramen-on-dotcloud
     dotcloud create ramen
     
 * Step 2: Create a dotcloud.yml file in your ramen-on-dotcloud project root
-
 
     www:
       type: perl
@@ -32,7 +30,6 @@ here: http://docs.dotcloud.com/services/perl/#basic-use
         - App::cpanminus
         
 * Step 3: Create the following directory structure
-
 
     ramen-on-dotcloud/
     |_ dotcloud.yml   (also known as the "Build File")
@@ -48,7 +45,6 @@ here: http://docs.dotcloud.com/services/perl/#basic-use
 ** This step typcially breaks if your local setip isn't correct. ** This example project 
 supplies *old* but working files.
 
-    
     cpanm Dancer
     cd ramen-on-dotcloud
     dancer -a helloperl
@@ -56,7 +52,6 @@ supplies *old* but working files.
     
 
 * Step 5: Edit the Makefile.pl and add Plack
-
 
     PREREQ_PM => {
       'Test::More' => 0,
@@ -67,9 +62,5 @@ supplies *old* but working files.
 
 * Step 6: Push the application to dotCloud
 
-
     dotcloud push
     
-    
-
-
